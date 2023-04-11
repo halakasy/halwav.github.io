@@ -1,0 +1,27 @@
+site_name: halakasy
+site_url: https://halakasy.github.io/
+nav:
+  - index.md
+  - plane_wave.md
+  - current_density.md
+markdown_extensions: #https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown-extensions/#mkdocsyml
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+theme:
+  name: readthedocs
+
+plugins: 
+  - search
+  - i18n:
+      docs_structure: suffix
+      default_language: ru
+      languages:
+        ru:
+          name: Russian
+          build: true
+          site_name: "Волны"
